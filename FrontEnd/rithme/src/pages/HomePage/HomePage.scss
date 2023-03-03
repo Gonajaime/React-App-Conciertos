@@ -1,0 +1,71 @@
+@import '../../styles/_colors.scss';
+
+.home {
+    background: $background;
+    
+    width: 100%;
+    height: 130vh;
+
+    font-family: "Oxygen";
+    font-weight: bold;
+
+    .header{
+        padding-top: 15px;
+        width: 100%;
+        height: 10%;
+        // box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+        // background-color: $theme-color;
+        color:white;
+    }
+
+    .main{
+        height: 75%;
+        width: 100%;
+        overflow: scroll;
+
+        .home{
+            &__title h2{
+                color: white;
+                font-size: 12pt;
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+
+            }
+            &__title h1{
+                color: rgb(234, 241, 4);
+                text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+            }
+            
+            &__button {
+                width: 70pt;
+                height: 31pt;
+                border-style: none;
+                font-size: 12pt;
+                margin: 20px;
+                background-color: $theme-color;
+                color: white;
+                border-radius: 12pt;
+            }
+        
+            &__container{
+        
+                &--buttons{
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+        
+    }
+
+    .footer{
+        position: fixed;
+        bottom: 0;
+        height: 15%;
+        width: 100%;
+        box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.3);
+        background-color: transparent;
+    }
+
+
+};
